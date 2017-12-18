@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/animations.js"></script>
+</head>
+<body>
+<div class="header">
+  <h1 id="logo">NorthKino</h1>
+  <span class="hidden-space">Space in between</span>
+  <div class="minicart"><span class="cart-price">0 €</span><a class="go-to-cart">Go To Cart</a></div>
+</div>
+<div id="content">
+  <div id="map-container">
+    <h2>Pick your city</h2>
+    <img id="finland-map" src="images/finland.png" />
+    <img src="images/theater-icon.svg" class="cinema-icon" id="Helsinki" />
+    <img src="images/theater-icon.svg" class="cinema-icon" id="Turku" />
+    <img src="images/theater-icon.svg" class="cinema-icon" id="Tampere" />
+    <img src="images/theater-icon.svg" class="cinema-icon" id="Rovaniemi" />
+    <img src="images/theater-icon.svg" class="cinema-icon" id="Oulu" />
+  </div>
+  <div id="main">
+    <h3>Upcoming:</h3>
+    <div class="carousel">
+      <div id="carousel-images"></div>
+      <div id="carousel-details">
+        <h2 class="title"></h2>
+        <p class="synopsis"></p>
+        <p class="details"></p>
+      </div>
+    </div>
+    <div class="showing-title">
+      <h3>Now showing:</h3>
+      <nav class="day-picking">
+        <div class="sub-menu-parent" tab-index="0">
+          <a id="chosen-day">Today</a>
+          <ul class="sub-menu">
+            <li><a id="today" class="selected">Today</a></li>
+            <li><a id="tomorrow">Tomorrow</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="showing-container">
+      <div class="showing today active" style="width:100%"></div>
+      <div class="showing tomorrow" style="width:100%"></div>
+    </div>
+    <div style="width:25%">
+    </div>
+  </div>
+</div>
+</body>
+</html>
